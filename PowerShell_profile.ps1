@@ -4,7 +4,6 @@ Set-Variable HOME "D:\" -Force
 
 #aliases
 Set-Alias -Name open -Value ii
-Set-Alias -Name touch -Value New-Item
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name vi -Value nvim
 # New-Alias grep Select-String
@@ -17,6 +16,18 @@ Set-PoshPrompt -Theme spaceship
 #Functions
 function which($name){
     Get-Command $name | Select-Object -ExpandProperty Definition
+}
+
+function touch{
+    ForEach ($filename in $args){
+        New-Item $filename
+    }
+}
+
+function remove {
+    ForEach ($filename in $args){
+        Remove-Item $filename
+    }
 }
 
 
