@@ -1,16 +1,23 @@
+#Starting directory
 Set-Location D:\
 Set-Variable HOME "D:\" -Force
-# New-Alias open ii
+
+#aliases
 Set-Alias -Name open -Value ii
 Set-Alias -Name touch -Value New-Item
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name vi -Value nvim
 # New-Alias grep Select-String
 
-
+#Customization
 Import-Module posh-git
 Import-Module oh-my-posh
 Set-PoshPrompt -Theme spaceship
+
+#Functions
+function which($name){
+    Get-Command $name | Select-Object -ExpandProperty Definition
+}
 
 
 # # Shows navigable menu of all options when hitting Tab
