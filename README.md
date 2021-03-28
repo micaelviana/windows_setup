@@ -3,7 +3,7 @@ Links and config files for Windows
 
 ## Links
 
-   [Chocolatey](https://chocolatey.org/) / [Packages](https://gist.github.com/micaelviana)
+   [Chocolatey](https://chocolatey.org/)
 
    [Explorer Context Menu Integration for Windows Terminal](https://github.com/BroJenuel/Explorer-Context-Menu-Integration-for-windows-terminal/)
    
