@@ -15,6 +15,7 @@ Plug 'preservim/nerdtree' "Barra lateral
 Plug 'itchyny/lightline.vim' "Barra inferior
 Plug 'preservim/nerdcommenter' "assistente para  inserir comentarios
 Plug 'sheerun/vim-polyglot' "Sinxtaxe de diversas linguagens de programacao
+Plug 'honza/vim-snippets' "Pacote de snippets
 "-----Temas----
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 "-----Extras----
