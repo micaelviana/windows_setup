@@ -1,19 +1,12 @@
-#Starting directory
 Set-Location D:\
 Set-Variable HOME "D:\" -Force
-
-#aliases
+Set-Variable VIMRC "C:\Users\Micael\AppData\Local\nvim\init.vim"
+# New-Alias open ii
 Set-Alias -Name open -Value ii
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name vi -Value nvim
 # New-Alias grep Select-String
 
-#Customization
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme spaceship
-
-#Functions
 function which($name){
     Get-Command $name | Select-Object -ExpandProperty Definition
 }
@@ -29,6 +22,16 @@ function remove {
         Remove-Item $filename
     }
 }
+
+function gh{
+    Set-Location D:\
+}
+
+
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme spaceship
 
 
 # # Shows navigable menu of all options when hitting Tab
@@ -47,6 +50,7 @@ Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 # Autocompleteion for Arrow keys
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadLineKeyHandler -Key End -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Set-PSReadLineOption -ShowToolTips
