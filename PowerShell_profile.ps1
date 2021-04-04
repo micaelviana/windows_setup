@@ -1,11 +1,15 @@
+#variables
 Set-Location D:\
 Set-Variable HOME "D:\" -Force
 Set-Variable VIMRC "C:\Users\Micael\AppData\Local\nvim\init.vim"
 # New-Alias open ii
+
+#aliases
 Set-Alias -Name open -Value ii
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name vi -Value nvim
-# New-Alias grep Select-String
+
+#functions
 
 function which($name){
     Get-Command $name | Select-Object -ExpandProperty Definition
@@ -27,7 +31,13 @@ function gh{
     Set-Location D:\
 }
 
+#just works in adm mode
+function link ($target, $link) {
+    New-Item -Path $link -ItemType SymbolicLink -Value $target
+}
 
+
+#Modules
 
 Import-Module posh-git
 Import-Module oh-my-posh
