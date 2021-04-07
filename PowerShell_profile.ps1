@@ -9,6 +9,9 @@ Set-Alias -Name open -Value ii
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name vi -Value nvim
 
+#parameters(-Character -Word -Line)
+Set-Alias -Name wc -Value Measure-Object
+
 #functions
 
 function which($name){
@@ -60,7 +63,6 @@ Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 # Autocompleteion for Arrow keys
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key End -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 Set-PSReadLineOption -ShowToolTips
