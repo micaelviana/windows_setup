@@ -18,6 +18,7 @@ Plug 'sheerun/vim-polyglot' "Sinxtaxe de diversas linguagens de programacao
 Plug 'honza/vim-snippets' "Pacote de snippets
 "-----Temas----
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+Plug 'haishanh/night-owl.vim'
 "-----Extras----
 Plug 'christoomey/vim-tmux-navigator' "navegação mais amigável pelos splits
 Plug 'mg979/vim-visual-multi', {'branch': 'master'} "Multiplos cursores
@@ -43,7 +44,8 @@ endif
 "definicao de tema
 let g:material_terminal_italics = 1
 let g:material_theme_style = 'darker'
-colorscheme material
+" colorscheme material
+colorscheme night-owl
 
 "----------DEFINICAO DE TECLAS DE ATALHO ----------
 "define a tecla space como leader 
