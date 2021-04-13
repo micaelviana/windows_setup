@@ -36,7 +36,8 @@
 
             "startingDirectory": ".",
             "useAcrylic": false, 
-            "fontSize": 14
+            "fontSize": 14,
+            "cursorShape": "bar"
         },
         "list":
         [
