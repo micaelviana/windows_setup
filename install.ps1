@@ -1,4 +1,5 @@
 # powershell -executionpolicy bypass -File C:\Users\mypath\install.ps1 
+# apps that have context menu that i domt want: sublime,vscode,vlc
 $Packages = '7zip',
             'adobereader',
             'ccleaner',
@@ -12,7 +13,6 @@ $Packages = '7zip',
             'nodejs.install',
             'qbittorrent',
             'virtualbox',
-            'vlc',
             'wps-office-free'
             
 
