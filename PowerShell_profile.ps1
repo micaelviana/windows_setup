@@ -1,6 +1,5 @@
 #variables
 Set-Location D:\
-Set-Variable HOME "D:\" -Force
 Set-Variable VIMRC "C:\Users\Micael\AppData\Local\nvim\init.vim"
 Set-Variable VIDIR "C:\Users\Micael\AppData\Local\nvim"
 

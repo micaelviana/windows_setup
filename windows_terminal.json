@@ -36,6 +36,7 @@
 
             "startingDirectory": ".",
             "useAcrylic": false, 
+            "fontFace":  "FiraCode NF",
             "fontSize": 14,
             "cursorShape": "bar"
         },
@@ -46,7 +47,6 @@
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "name": "Windows PowerShell",
                 "commandline": "powershell.exe",
-                "fontFace":  "FiraCode Nerd Font Mono",
                 "hidden": false
             },
             {
