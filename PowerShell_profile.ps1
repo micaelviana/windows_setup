@@ -28,7 +28,7 @@ function touch{
 
 function remove {
     ForEach ($filename in $args){
-        Remove-Item $filename
+        Remove-Item -Force $filename
     }
 }
 
