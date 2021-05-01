@@ -3,7 +3,6 @@ Set-Location D:\
 Set-Variable VIMRC "C:\Users\Micael\AppData\Local\nvim\init.vim"
 Set-Variable VIDIR "C:\Users\Micael\AppData\Local\nvim"
 
-
 # New-Alias open ii
 
 #aliases
@@ -39,6 +38,12 @@ function gh{
 #just works in adm mode
 function link ($target, $link) {
     New-Item -Path $link -ItemType SymbolicLink -Value $target
+}
+
+#list choco packages
+
+function clocal {
+    choco list --local only
 }
 
 
