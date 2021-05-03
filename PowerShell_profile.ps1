@@ -17,10 +17,10 @@ Set-Alias -Name wc -Value Measure-Object
 
 #git aliases
 function ga($file){git add $file}
-function gp{git push}
-function gl{git pull}
+function gpush{git push}
+function gll{git pull}
 function gc($repo){git clone $repo}
-function gs{git status }
+function gs{git status}
 
 #pretends to be linux which
 function which($name){
