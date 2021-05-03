@@ -15,16 +15,26 @@ Set-Alias -Name wc -Value Measure-Object
 
 #functions
 
+#git aliases
+function ga($file){git add $file}
+function gp{git push}
+function gl{git pull}
+function gc($repo){git clone $repo}
+function gs{git status }
+
+#pretends to be linux which
 function which($name){
     Get-Command $name | Select-Object -ExpandProperty Definition
 }
 
+#pretends to be linux touch
 function touch{
     ForEach ($filename in $args){
         New-Item $filename
     }
 }
 
+#Remove-Item doesn't delete folders by default, -Force solve the problem
 function remove {
     ForEach ($filename in $args){
         Remove-Item -Force $filename
@@ -41,7 +51,6 @@ function link ($target, $link) {
 }
 
 #list choco packages
-
 function clocal {
     choco list --local only
 }
