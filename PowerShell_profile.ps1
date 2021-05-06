@@ -16,7 +16,7 @@ Set-Alias -Name wc -Value Measure-Object
 #functions
 
 #git aliases
-function ga($file){git add $file}
+function gau{git add -u}
 function gpush{git push}
 function gll{git pull}
 function gc($repo){git clone $repo}
