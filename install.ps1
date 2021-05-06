@@ -1,5 +1,5 @@
 # powershell -executionpolicy bypass -File C:\Users\mypath\install.ps1 
-# apps that have context menu that i domt want: sublime,vscode,vlc, format factory, git
+# apps that have context menu that i domt want: sublime,vscode,vlc, format factory
 #better version of Kate Editor is from Microsoft Store
 #comment 
 $Packages = '7zip',
@@ -7,6 +7,7 @@ $Packages = '7zip',
     'ccleaner',
     'driverbooster',
     'formatfactory',
+    'git',
     'googlechrome',
     'make',
     'microsoft-windows-terminal',
