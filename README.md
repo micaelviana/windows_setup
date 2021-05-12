@@ -6,6 +6,8 @@ Links and config files for Windows
    [Chocolatey](https://chocolatey.org/)
 
    [Explorer Context Menu Integration for Windows Terminal](https://github.com/BroJenuel/Explorer-Context-Menu-Integration-for-windows-terminal/)
+
+   [Fluent Terminal](https://github.com/felixse/FluentTerminal)
    
 ## WSL
 
