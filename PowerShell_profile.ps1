@@ -1,5 +1,5 @@
 #variables
-Set-Location D:\
+# Set-Location D:\
 Set-Variable VIMRC "C:\Users\Micael\AppData\Local\nvim\init.vim"
 Set-Variable VIDIR "C:\Users\Micael\AppData\Local\nvim"
 
@@ -19,8 +19,17 @@ Set-Alias -Name wc -Value Measure-Object
 function gau{git add -u}
 function gpush{git push}
 function gll{git pull}
-function gc($repo){git clone $repo}
 function gs{git status}
+
+#set startup directory
+function setLocale {
+    $actual = $pwd.Path
+    $system = "C:\WINDOWS\system32"
+
+    if($actual -eq $system){
+        Set-Location D:\
+    }
+}
 
 #pretends to be linux which
 function which($name){
@@ -54,6 +63,9 @@ function link ($target, $link) {
 function clocal {
     choco list --local only
 }
+
+#call function 
+setLocale
 
 
 #Modules
