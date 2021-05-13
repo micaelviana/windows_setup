@@ -64,6 +64,11 @@ function clocal {
     choco list --local only
 }
 
+#alias ..=cd .., just like in zsh
+function .. {
+    Set-Location ..
+}
+
 #call function 
 setLocale
 
