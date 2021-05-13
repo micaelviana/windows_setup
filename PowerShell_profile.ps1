@@ -21,12 +21,12 @@ function gpush{git push}
 function gll{git pull}
 function gs{git status}
 
-#set startup directory
+#set home directory
 function setLocale {
-    $actual = $pwd.Path
+    $current = $pwd.Path
     $system = "C:\WINDOWS\system32"
 
-    if($actual -eq $system){
+    if($current -eq $system){
         Set-Location D:\
     }
 }
