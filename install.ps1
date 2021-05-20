@@ -1,11 +1,10 @@
 # powershell -executionpolicy bypass -File C:\Users\mypath\install.ps1 
-# apps that have context menu that i domt want: sublime,vscode,vlc, format factory
+# apps that have context menu that i domt want: format factory,git,vscode,vlc, 
 $Packages = '7zip',
     'adobereader',
     'ccleaner',
     'driverbooster',
     'formatfactory',
-    'git',
     'googlechrome',
     'make',
     'microsoft-windows-terminal',
