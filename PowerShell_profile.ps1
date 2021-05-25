@@ -1,7 +1,6 @@
 #variables
 # Set-Location D:\
-Set-Variable VIMRC "C:\Users\Micael\AppData\Local\nvim\init.vim"
-Set-Variable VIDIR "C:\Users\Micael\AppData\Local\nvim"
+# Set-Variable VIDIR "C:\Users\Micael\AppData\Local\nvim"
 
 # New-Alias open ii
 
@@ -50,6 +49,7 @@ function remove {
     }
 }
 
+#go home
 function gh{
     Set-Location D:\
 }
@@ -62,6 +62,10 @@ function link ($target, $link) {
 #list choco packages
 function clocal {
     choco list --local only
+}
+
+function vidir{
+    Set-Location C:\Users\Micael\AppData\Local\nvim
 }
 
 #alias ..=cd .., just like in zsh
