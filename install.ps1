@@ -11,6 +11,7 @@ $Packages = '7zip',
 'neovim',
 'nodejs.install',
 'qbittorrent',
+'quicklook',
 'virtualbox',
 'wps-office-free'
             
