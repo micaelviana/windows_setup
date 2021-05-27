@@ -5,7 +5,7 @@
 # New-Alias open ii
 
 #aliases
-Set-Alias -Name open -Value ii
+Set-Alias -Name open -Value Invoke-Item
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name vi -Value nvim
 
