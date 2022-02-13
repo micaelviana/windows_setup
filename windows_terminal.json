@@ -29,7 +29,10 @@
         {
             "colorScheme": "Gruvbox Dark",
             "fontFace": "CodeNewRoman NF",
-            "fontSize": 15
+            "fontSize": 15,
+            "useAcrylic": true,
+            "acrylicOpacity": 0.7,
+            "bellStyle": "none"
             // Put settings here that you want to apply to all profiles.
         },
         "list":
