@@ -37,7 +37,7 @@
         {
             "acrylicOpacity": 0.69999999999999996,
             "bellStyle": "none",
-            "colorScheme": "Gruvbox Dark",
+            "colorScheme": "nord",
             "font": 
             {
                 "face": "CodeNewRoman NF",
@@ -311,6 +311,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
+        },
+        {
+            "background": "#2E3440",
+            "black": "#3B4252",
+            "blue": "#81A1C1",
+            "brightBlack": "#4C566A",
+            "brightBlue": "#81A1C1",
+            "brightCyan": "#8FBCBB",
+            "brightGreen": "#A3BE8C",
+            "brightPurple": "#B48EAD",
+            "brightRed": "#BF616A",
+            "brightWhite": "#ECEFF4",
+            "brightYellow": "#EBCB8B",
+            "cursorColor": "#ECEFF4",
+            "cyan": "#88C0D0",
+            "foreground": "#D8DEE9",
+            "green": "#A3BE8C",
+            "name": "nord",
+            "purple": "#B48EAD",
+            "red": "#BF616A",
+            "selectionBackground": "#ECEFF4",
+            "white": "#E5E9F0",
+            "yellow": "#EBCB8B"
         }
     ]
 }
