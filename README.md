@@ -4,8 +4,6 @@ Links and config files for Windows
 ## Links
 
    [Explorer Context Menu Integration for Windows Terminal](https://github.com/BroJenuel/Explorer-Context-Menu-Integration-for-windows-terminal/)
-   
-## WSL
 
    [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install-win10)
    
