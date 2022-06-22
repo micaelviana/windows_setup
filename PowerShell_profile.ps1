@@ -1,34 +1,14 @@
-#variables
-# Set-Location D:\
-# Set-Variable VIDIR "C:\Users\Micael\AppData\Local\nvim"
+#Prompt
+oh-my-posh.exe init pwsh | Invoke-Expression 
+oh-my-posh init pwsh --config ~/.config/takuya.omp.json | Invoke-Expression
+Import-Module posh-git
 
-# New-Alias open ii
 
-#aliases
-Set-Alias -Name open -Value Invoke-Item
-Set-Alias -Name grep -Value Select-String
-Set-Alias -Name vi -Value nvim
-
-#parameters(-Character -Word -Line)
-Set-Alias -Name wc -Value Measure-Object
-
-#functions
-
-#git aliases
-function gau{git add -u}
-function gpush{git push}
-function gll{git pull}
-function gs{git status}
-
-#set home directory
-function setLocale {
-    $current = $pwd.Path
-    $system = "C:\WINDOWS\system32"
-
-    if($current -eq $system){
-        Set-Location D:\
-    }
-}
+#Aliases
+Set-alias l ls
+Set-alias ll ls
+Set-alias vi nvim
+Set-alias g git
 
 #pretends to be linux which
 function which($name){
@@ -49,23 +29,9 @@ function remove {
     }
 }
 
-#go home
-function gh{
-    Set-Location D:\
-}
-
 #just works in adm mode
 function link ($target, $link) {
     New-Item -Path $link -ItemType SymbolicLink -Value $target
-}
-
-#list choco packages
-function clocal {
-    choco list --local only
-}
-
-function vidir{
-    Set-Location C:\Users\Micael\AppData\Local\nvim
 }
 
 #alias ..=cd .., just like in zsh
@@ -73,37 +39,14 @@ function .. {
     Set-Location ..
 }
 
-#call function 
-setLocale
 
-
-#Modules
-
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme spaceship
-
-
-# # Shows navigable menu of all options when hitting Tab
-# Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-
-# # Autocompletion for arrow keys
-# Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
-# Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
-
-
-Import-Module PSReadLine
-
-# Shows navigable menu of all options when hitting Tab
-Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
-
-# Autocompleteion for Arrow keys
-Set-PSReadLineOption -HistorySearchCursorMovesToEnd
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-
-Set-PSReadLineOption -ShowToolTips
+#MODULES
+# PSReadLine
+Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -BellStyle None
 Set-PSReadLineOption -PredictionSource History
-
-#Set​ the color for Prediction (auto-suggestion)
-# Set-PSReadlineOption -Colors @{History = 'DarkGreen' }
+Import-Module -Name Terminal-Icons
+# Fzf
+Import-Module PSFzf
+# replace 'Ctrl+t' and 'Ctrl+r' with your preferred bindings:
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
