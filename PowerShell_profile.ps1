@@ -1,6 +1,5 @@
 #Prompt
 oh-my-posh.exe init pwsh | Invoke-Expression 
-oh-my-posh init pwsh --config ~/.config/takuya.omp.json | Invoke-Expression
 Import-Module posh-git
 
 
@@ -10,17 +9,11 @@ Set-alias ll ls
 Set-alias vi nvim
 Set-alias g git
 
-#pretends to be linux which
-function which($name){
-    Get-Command $name | Select-Object -ExpandProperty Definition
+function which ($command) {
+  Get-Command -Name $command -ErrorAction SilentlyContinue |
+    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
-#pretends to be linux touch
-function touch{
-    ForEach ($filename in $args){
-        New-Item $filename
-    }
-}
 
 #Remove-Item doesn't delete folders by default, -Force solve the problem
 function remove {
@@ -50,3 +43,5 @@ Import-Module -Name Terminal-Icons
 Import-Module PSFzf
 # replace 'Ctrl+t' and 'Ctrl+r' with your preferred bindings:
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+
+Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
