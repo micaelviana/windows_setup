@@ -8,6 +8,7 @@ Set-alias l ls
 Set-alias ll ls
 Set-alias vi nvim
 Set-alias g git
+Set-alias clipcopy clip.exe
 
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
@@ -25,6 +26,10 @@ function remove {
 #just works in adm mode
 function link ($target, $link) {
     New-Item -Path $link -ItemType SymbolicLink -Value $target
+}
+
+function copyfile($file){
+    cat $file | clip.exe
 }
 
 #alias ..=cd .., just like in zsh
