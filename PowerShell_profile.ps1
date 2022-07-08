@@ -1,6 +1,16 @@
 #Prompt
-oh-my-posh.exe init pwsh | Invoke-Expression 
-Import-Module posh-git
+oh-my-posh init pwsh | Invoke-Expression 
+#Modules
+# PSReadLine
+Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -BellStyle None
+Set-PSReadLineOption -PredictionSource History
+Import-Module -Name Terminal-Icons
+# Fzf
+Import-Module PSFzf
+# replace 'Ctrl+t' and 'Ctrl+r' with your preferred bindings:
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
+Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
 
 
 #Aliases
@@ -36,17 +46,3 @@ function copyfile($file){
 function .. {
     Set-Location ..
 }
-
-
-#MODULES
-# PSReadLine
-Set-PSReadLineOption -EditMode Emacs
-Set-PSReadLineOption -BellStyle None
-Set-PSReadLineOption -PredictionSource History
-Import-Module -Name Terminal-Icons
-# Fzf
-Import-Module PSFzf
-# replace 'Ctrl+t' and 'Ctrl+r' with your preferred bindings:
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
-
-Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
