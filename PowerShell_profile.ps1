@@ -1,5 +1,6 @@
 #Prompt
-oh-my-posh init pwsh | Invoke-Expression 
+# oh-my-posh init pwsh | Invoke-Expression 
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\hunk.omp.json" | Invoke-Expression 
 #Modules
 # PSReadLine
 Set-PSReadLineOption -EditMode Emacs
