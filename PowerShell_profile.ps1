@@ -3,7 +3,7 @@
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\hunk.omp.json" | Invoke-Expression 
 #Modules
 # PSReadLine
-Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -EditMode Windows
 Set-PSReadLineOption -BellStyle None
 Set-PSReadLineOption -PredictionSource History
 Import-Module -Name Terminal-Icons
