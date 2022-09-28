@@ -11,7 +11,11 @@ Import-Module -Name Terminal-Icons
 Import-Module PSFzf
 # replace 'Ctrl+t' and 'Ctrl+r' with your preferred bindings:
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
-Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
+
+#lunarvim
+if(Test-Path -Path C:\Users\Micael\.local\bin\lvim.ps1 -PathType Leaf ){
+  Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
+}
 
 #Zoxide
 # For zoxide v0.8.0+
@@ -32,6 +36,7 @@ Set-alias vi nvim
 Set-alias g git
 Set-alias clipcopy clip.exe
 
+#{{Functions}}
 function which ($command){
   Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
@@ -58,3 +63,8 @@ function copyfile($file){
 function ..{
   Set-Location ..
 }
+
+#winget alias
+function winstall($package){
+    winget install $package --source winget
+  }
