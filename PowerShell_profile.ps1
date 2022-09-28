@@ -34,9 +34,14 @@ function la{lsd -a}
 function lla{lsd -la}
 
 #Aliases
+Set-Alias pwd normal_pwd
 Set-alias vi nvim
 Set-alias g git
 Set-alias clipcopy clip.exe
+
+function normal_pwd{
+write-host $pwd.Path
+}
 
 #aliases to git binaries
 Set-alias mkdir C:\Users\Micael\scoop\apps\git\current\usr\bin\mkdir.exe
