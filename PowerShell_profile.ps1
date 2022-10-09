@@ -4,7 +4,6 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\gruvbox.omp.json" | Invoke-
 #Modules
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle InlineView
 Set-PSReadLineOption -BellStyle None
 
 # Fzf
@@ -32,14 +31,14 @@ function la{lsd -a}
 function lla{lsd -la}
 
 #Aliases
+function normal_pwd{
+  Write-Host .Path
+}
 Set-Alias pwd normal_pwd
 Set-alias vi nvim
 Set-alias g git
 Set-alias clipcopy clip.exe
 
-function normal_pwd{
-write-host $pwd.Path
-}
 
 #aliases to git binaries
 Set-alias mkdir C:\Users\Micael\scoop\apps\git\current\usr\bin\mkdir.exe
