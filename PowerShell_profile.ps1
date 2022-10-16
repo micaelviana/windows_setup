@@ -41,8 +41,6 @@ Set-alias clipcopy clip.exe
 
 
 #aliases to git binaries
-Set-alias mkdir C:\Users\Micael\scoop\apps\git\current\usr\bin\mkdir.exe
-Set-alias cat C:\Users\Micael\scoop\apps\git\current\usr\bin\cat.exe
 Set-alias less C:\Users\Micael\scoop\apps\git\current\usr\bin\less.exe
 Set-alias head C:\Users\Micael\scoop\apps\git\current\usr\bin\head.exe
 Set-alias tail C:\Users\Micael\scoop\apps\git\current\usr\bin\tail.exe
@@ -53,7 +51,6 @@ Set-alias touch C:\Users\Micael\scoop\apps\git\current\usr\bin\touch.exe
 Set-alias find C:\Users\Micael\scoop\apps\git\current\usr\bin\find.exe
 Set-alias rm C:\Users\Micael\scoop\apps\git\current\usr\bin\rm.exe
 Set-alias rmdir C:\Users\Micael\scoop\apps\git\current\usr\bin\rmdir.exe
-Set-alias ln C:\Users\Micael\scoop\apps\git\current\usr\bin\ln.exe
 Set-alias wc C:\Users\Micael\scoop\apps\git\current\usr\bin\wc.exe
 
 #{{Functions}}
