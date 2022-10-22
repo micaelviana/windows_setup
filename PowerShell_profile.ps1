@@ -32,7 +32,7 @@ function lla{lsd -la}
 
 #Aliases
 function normal_pwd{
-  Write-Host .Path
+  Write-Host $pwd.Path
 }
 Set-Alias pwd normal_pwd
 Set-alias vi nvim
