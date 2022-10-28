@@ -1,6 +1,8 @@
 #Prompt
 # oh-my-posh init pwsh | Invoke-Expression 
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\hunk.omp.json" | Invoke-Expression 
+#create a shortcut to HOMEPATH
+$me=$env:HOMEPATH
 #Modules
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
@@ -51,7 +53,7 @@ Set-alias touch C:\Users\Micael\scoop\apps\git\current\usr\bin\touch.exe
 Set-alias find C:\Users\Micael\scoop\apps\git\current\usr\bin\find.exe
 Set-alias rm C:\Users\Micael\scoop\apps\git\current\usr\bin\rm.exe
 Set-alias rmdir C:\Users\Micael\scoop\apps\git\current\usr\bin\rmdir.exe
-Set-alias wc C:\Users\Micael\scoop\apps\git\current\usr\bin\wc.exe
+Set-alias column C:\Users\Micael\scoop\apps\git\current\usr\bin\column.exe
 
 #{{Functions}}
 function which ($command){
