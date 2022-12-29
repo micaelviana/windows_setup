@@ -11,4 +11,3 @@ Links and config files for Windows
 
    [Neovim Clipboard](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl)
    
-   [PsReadLine](https://stackoverflow.com/questions/71170461/set-psreadlineoption-a-parameter-cannot-be-found-that-matches-parameter-name-p)
