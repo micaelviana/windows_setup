@@ -19,4 +19,5 @@ scoop install zoxide
 scoop install sort-uniq-wc
 scoop install psfzf
 scoop install psreadline
+scoop install vim
 scoop install vlc
