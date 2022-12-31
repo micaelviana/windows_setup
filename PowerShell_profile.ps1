@@ -57,18 +57,18 @@ Set-alias clipcopy clip.exe
 
 
 #aliases to git binaries
-Set-alias less C:\Users\Micael\scoop\apps\git\current\usr\bin\less.exe
-Set-alias head C:\Users\Micael\scoop\apps\git\current\usr\bin\head.exe
-Set-alias tail C:\Users\Micael\scoop\apps\git\current\usr\bin\tail.exe
-Set-alias grep C:\Users\Micael\scoop\apps\git\current\usr\bin\grep.exe
-Set-alias sed C:\Users\Micael\scoop\apps\git\current\usr\bin\sed.exe
-Set-alias awk C:\Users\Micael\scoop\apps\git\current\usr\bin\gawk.exe
-Set-alias touch C:\Users\Micael\scoop\apps\git\current\usr\bin\touch.exe
-Set-alias find C:\Users\Micael\scoop\apps\git\current\usr\bin\find.exe
-Set-alias rm C:\Users\Micael\scoop\apps\git\current\usr\bin\rm.exe
-Set-alias rmdir C:\Users\Micael\scoop\apps\git\current\usr\bin\rmdir.exe
-Set-alias column C:\Users\Micael\scoop\apps\git\current\usr\bin\column.exe
-
+Set-Alias less "C:\Program Files\Git\usr\bin\less.exe"
+Set-alias head "C:\Program Files\Git\usr\bin\head.exe"
+Set-alias tail "C:\Program Files\Git\usr\bin\tail.exe"
+Set-alias grep "C:\Program Files\Git\usr\bin\grep.exe"
+Set-alias sed "C:\Program Files\Git\usr\bin\sed.exe"
+Set-alias awk "C:\Program Files\Git\usr\bin\gawk.exe"
+Set-alias touch "C:\Program Files\Git\usr\bin\touch.exe"
+Set-alias find "C:\Program Files\Git\usr\bin\find.exe"
+Set-alias rm "C:\Program Files\Git\usr\bin\rm.exe"
+Set-alias rmdir "C:\Program Files\Git\usr\bin\rmdir.exe"
+Set-alias column "C:\Program Files\Git\usr\bin\column.exe"
+ 
 #{{Functions}}
 function which ($command){
   Get-Command -Name $command -ErrorAction SilentlyContinue |
@@ -105,3 +105,5 @@ function winstall($package){
 function msinstall($package){
     winget install $package --source msstore
 }
+
+
