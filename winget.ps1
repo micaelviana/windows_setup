@@ -17,3 +17,4 @@ winget install --id=Microsoft.PowerShell -e
 winget install --id=Microsoft.PowerToys -e 
 winget install --id KDE.Okular -e 
 winget install --id Microsoft.WindowsTerminal -e
+winget install --id  KDE.Okular -e
