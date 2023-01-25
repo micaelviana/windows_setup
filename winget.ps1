@@ -5,7 +5,6 @@ winget install --id=Ditto.Ditto                               -e
 winget install --id=Notepad++.Notepad++                       -e
 winget install --id=JanDeDobbeleer.OhMyPosh                   -e
 winget install --id=Microsoft.Teams                           -e
-winget install --id=WhatsApp.WhatsApp                         -e
 winget install --id=Notion.Notion                             -e
 winget install --id=Telegram.TelegramDesktop                  -e
 winget install --id=MacType.MacType                           -e
@@ -17,4 +16,3 @@ winget install --id=Microsoft.PowerShell -e
 winget install --id=Microsoft.PowerToys -e 
 winget install --id KDE.Okular -e 
 winget install --id Microsoft.WindowsTerminal -e
-winget install --id  KDE.Okular -e
