@@ -8,18 +8,10 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-#Prompt
-# oh-my-posh init pwsh | Invoke-Expression 
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\hunk.omp.json" | Invoke-Expression 
-#create a shortcut to HOMEPATH
-$me=$env:HOMEPATH
 #Modules
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -BellStyle None
-
-#FNM
-fnm env --use-on-cd | Out-String | Invoke-Expression
 
 # Fzf
 Import-Module PSFzf
@@ -27,18 +19,12 @@ Import-Module PSFzf
 Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+t' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 
-#lunarvim
-if(Test-Path -Path C:\Users\Micael\.local\bin\lvim.ps1 -PathType Leaf ){
-  Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
-}
-
 #Zoxide
 # For zoxide v0.8.0+
 Invoke-Expression (& {
     $hook = if ($PSVersionTable.PSVersion.Major -lt 6) { 'prompt' } else { 'pwd' }
     (zoxide init --hook $hook powershell | Out-String)
 })
-
 
 #LSD
 Set-Alias ls lsd
@@ -105,5 +91,3 @@ function winstall($package){
 function msinstall($package){
     winget install $package --source msstore
 }
-
-
