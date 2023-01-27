@@ -3,7 +3,6 @@ winget install --id=ModernFlyouts.ModernFlyouts               -e
 winget install --id=7zip.7zip                                 -e
 winget install --id=Ditto.Ditto                               -e
 winget install --id=Notepad++.Notepad++                       -e
-winget install --id=JanDeDobbeleer.OhMyPosh                   -e
 winget install --id=Microsoft.Teams                           -e
 winget install --id=Notion.Notion                             -e
 winget install --id=Telegram.TelegramDesktop                  -e
