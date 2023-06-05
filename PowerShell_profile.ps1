@@ -8,6 +8,12 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
+#Lunarvim
+if(Test-Path -Path C:\Users\Micael\.local\bin\lvim.ps1 -PathType Leaf ){
+  Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
+}
+
+
 #Modules
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
@@ -91,3 +97,7 @@ function winstall($package){
 function msinstall($package){
     winget install $package --source msstore
 }
+
+
+#Starship source
+Invoke-Expression (&starship init powershell)
