@@ -3,7 +3,10 @@ Links and config files for Windows
 
 ## Powershell Profile
 Force windows to use a different path profile
-. $env:USERPROFILE\repos\windows_setup\Powershell_Profile.ps1
+
+```powershell
+. $env:USERPROFILE\repos\windows_setup\profile.ps1
+```
 
 ## Links
 
