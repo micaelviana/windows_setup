@@ -71,6 +71,10 @@ function vif(){
   nvim -o $(fzf --layout=reverse --height=50% --read0 --print0 --exit-0)
 }
 
+function vid {
+   nvim . 
+}
+
 #Remove-Item doesn't delete folders by default, -Force solve the problem
 function remove{
   ForEach ($filename in $args){
