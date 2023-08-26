@@ -88,9 +88,18 @@ function copyfile($file){
 }
 
 #alias ..=cd .., just like in zsh
-function ..{
-  Set-Location ..
-}
+function ..{ Set-Location ..}
+
+#git functions
+function gp {git push origin HEAD }
+
+function gco{git commit -m}
+
+function gau {git add -u}
+
+function gpl {git pull}
+
+function gs {git status}
 
 #winget install from winget
 function winstall($package){
