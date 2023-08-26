@@ -37,6 +37,7 @@ Set-Alias ls lsd
 function ll{lsd -l}
 function la{lsd -a}
 function lla{lsd -la}
+function lt{lsd --tree}
 
 #Aliases
 function normal_pwd{
