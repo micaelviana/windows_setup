@@ -14,5 +14,5 @@ Source a different path profile
    
    [Arch WSL](https://github.com/yuk7/ArchWSL)
 
-
+   [Wsl Clipboard](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl)
   
