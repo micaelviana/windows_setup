@@ -15,3 +15,4 @@ choco install powershell
 choco install powertoys
 choco install telegram
 choco install vscode
+choco install win32yank
