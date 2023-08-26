@@ -67,6 +67,9 @@ function which ($command){
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
 
+function vif(){
+  nvim -o $(fzf --layout=reverse --height=50% --read0 --print0 --exit-0)
+}
 
 #Remove-Item doesn't delete folders by default, -Force solve the problem
 function remove{
