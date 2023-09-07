@@ -96,7 +96,7 @@ function copyfile($file){
 function ..{ Set-Location ..}
 
 #git functions
-function gp {git push origin HEAD}
+function gpu {git push origin HEAD}
 
 function gco($message){git commit -m "$message"}
 
