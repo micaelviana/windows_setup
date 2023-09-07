@@ -17,3 +17,4 @@ scoop install psreadline
 scoop install starship
 scoop install vim
 scoop install vlc
+scoop install https://raw.githubusercontent.com/lukesampson/shimexe/master/scoop/shim.json
