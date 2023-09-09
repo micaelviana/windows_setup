@@ -1,6 +1,7 @@
 # PowerShell.exe -File <FileName> -ExecutionPolicy Bypass 
 choco install 7zip
 choco install ditto
+choco install fira
 choco install flameshot
 choco install googlechrome
 choco install mactype
