@@ -17,3 +17,6 @@ choco install powertoys
 choco install telegram
 choco install vscode
 choco install win32yank
+choco install nerd-fonts-hack
+choco install nerd-fonts-cascadiacode
+choco install nerd-fonts-codenewroman
