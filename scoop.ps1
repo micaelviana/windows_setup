@@ -1,6 +1,4 @@
 ##PowerShell.exe -File <FileName> -ExecutionPolicy Bypass
-scoop bucket add extras
-scoop install aria2
 scoop install bat
 scoop install curl
 scoop install fzf

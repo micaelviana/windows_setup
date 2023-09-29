@@ -3,8 +3,8 @@
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
 irm get.scoop.sh | iex
 
-scoop bucket add extras
-
 scoop install aria2c
 scoop install 7zip
 scoop install git
+
+scoop bucket add extras
