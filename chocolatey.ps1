@@ -17,5 +17,4 @@ choco install powertoys
 choco install telegram
 choco install vscode
 choco install nerd-fonts-codenewroman
-choco install nerd-fonts-firacode
 choco install nerd-fonts-hack
