@@ -1,7 +1,7 @@
 # PowerShell.exe -File <FileName> -ExecutionPolicy Bypass 
 
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
-irm get.scoop.sh | iex
+Invoke-RestMethod get.scoop.sh | Invoke-Expression
 
 scoop install aria2c
 scoop install 7zip
