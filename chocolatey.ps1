@@ -4,6 +4,7 @@ choco install ditto
 choco install fira
 choco install flameshot
 choco install googlechrome
+choco install listary
 choco install mactype
 choco install microsoft-teams
 choco install microsoft-windows-terminal
