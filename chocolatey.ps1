@@ -13,7 +13,6 @@ choco install neovim
 choco install notepadplusplus
 choco install notion
 choco install okular
-choco install powershell
 choco install telegram
 choco install vscode
 choco install nerd-fonts-codenewroman
