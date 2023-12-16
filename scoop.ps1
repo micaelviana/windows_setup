@@ -4,7 +4,6 @@ scoop install curl
 scoop install fzf
 scoop install gawk
 scoop install lsd
-scoop install nodejs
 scoop install tldr
 scoop install wget
 scoop install zip
