@@ -8,6 +8,9 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
+#fnm
+fnm env --use-on-cd | Out-String | Invoke-Expression
+
 #Lunarvim
 if(Test-Path -Path C:\Users\Micael\.local\bin\lvim.ps1 -PathType Leaf ){
   Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
