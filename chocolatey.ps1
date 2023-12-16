@@ -8,7 +8,6 @@ choco install googlechrome
 choco install listary
 choco install mactype
 choco install microsoft-teams
-choco install microsoft-windows-terminal
 choco install modernflyouts
 choco install neovim
 choco install notepadplusplus
