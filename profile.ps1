@@ -16,7 +16,6 @@ if(Test-Path -Path C:\Users\Micael\.local\bin\lvim.ps1 -PathType Leaf ){
   Set-Alias lvim C:\Users\Micael\.local\bin\lvim.ps1
 }
 
-
 #Modules
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
