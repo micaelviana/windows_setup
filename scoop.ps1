@@ -12,6 +12,7 @@ scoop install sort-uniq-wc
 scoop install psfzf
 scoop install psreadline
 scoop install starship
+scoop install sudo
 scoop install vim
 scoop install vlc
 scoop install https://raw.githubusercontent.com/lukesampson/shimexe/master/scoop/shim.json
