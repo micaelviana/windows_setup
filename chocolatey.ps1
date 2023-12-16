@@ -14,7 +14,6 @@ choco install notepadplusplus
 choco install notion
 choco install okular
 choco install powershell
-choco install powertoys
 choco install telegram
 choco install vscode
 choco install nerd-fonts-codenewroman
