@@ -6,7 +6,6 @@ choco install firacode
 choco install flameshot
 choco install googlechrome
 choco install listary
-choco install mactype
 choco install microsoft-teams
 choco install modernflyouts
 choco install neovim
