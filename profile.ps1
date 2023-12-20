@@ -46,7 +46,7 @@ function normal_pwd{
   Write-Host $pwd.Path
 }
 Set-Alias pwd normal_pwd
-Set-alias vi nvim
+Set-alias vi lvim
 Set-alias g git
 Set-alias clipcopy clip.exe
 
@@ -71,11 +71,11 @@ function which ($command){
 }
 
 function vif(){
-  nvim -o $(fzf --layout=reverse --height=50% --read0 --print0 --exit-0)
+  lvim -o $(fzf --layout=reverse --height=50% --read0 --print0 --exit-0)
 }
 
 function vid {
-   nvim . 
+   lvim . 
 }
 
 #Remove-Item doesn't delete folders by default, -Force solve the problem
