@@ -1,6 +1,15 @@
 # windows_setup
 Links and config files for Windows
 
+## Choco Installation
+Use this command to install choco packages from a file
+
+```powershell
+Get-Content chocolatey.txt | ForEach-Object { choco install $_ -y }
+```
+
+ Make sure to run the command with administrative privileges if required.
+
 ## Powershell Profile
 Source a different path profile
 
