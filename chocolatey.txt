@@ -11,6 +11,7 @@ neovim
 notepadplusplus
 notion
 okular
+qbittorrent
 telegram
 vscode
 nerd-fonts-codenewroman
