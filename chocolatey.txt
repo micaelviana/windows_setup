@@ -1,0 +1,17 @@
+7zip
+ditto
+everything
+firacode
+flameshot
+googlechrome
+listary
+microsoft-teams
+modernflyouts
+neovim
+notepadplusplus
+notion
+okular
+telegram
+vscode
+nerd-fonts-codenewroman
+nerd-fonts-hack
