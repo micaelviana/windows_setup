@@ -20,15 +20,9 @@ Source a different path profile
 . $env:USERPROFILE\repos\windows_setup\profile.ps1
 ```
 
-
-
-## Lunarvim
-
-[Lunarvim](https://www.lunarvim.org/)
-
-
-
 ## Links
+
+   [Lunarvim](https://www.lunarvim.org/)
 
    [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install-win10)
 
@@ -37,3 +31,4 @@ Source a different path profile
    [Wsl Clipboard](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl)
 
    [Win32yank release page](https://github.com/equalsraf/win32yank/releases)  
+
