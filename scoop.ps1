@@ -7,6 +7,7 @@ scoop install fzf
 scoop install gawk
 scoop install lsd
 scoop install make
+scoop install mingw
 scoop install tldr
 scoop install wget
 scoop install zip
