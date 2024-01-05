@@ -3,6 +3,7 @@ espanso
 everything
 firacode
 flameshot
+freedownloadmanager
 googlechrome
 listary
 microsoft-teams
@@ -11,7 +12,9 @@ neovim
 notepadplusplus
 notion
 okular
+onlyoffice
 qbittorrent
+qdir
 telegram
 vscode
 nerd-fonts-codenewroman
