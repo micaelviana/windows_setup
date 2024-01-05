@@ -6,7 +6,7 @@ flameshot
 freedownloadmanager
 googlechrome
 listary
-microsoft-teams
+localsend
 modernflyouts
 neovim
 notepadplusplus
