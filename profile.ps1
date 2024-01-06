@@ -99,7 +99,7 @@ function ..{ Set-Location ..}
 #git functions
 function gpu {git push origin HEAD}
 
-function gcm($message){git commit -m "$message"}
+function gcme($message){git commit -m "$message"}
 
 function gau {git add -u}
 
