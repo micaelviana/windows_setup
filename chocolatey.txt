@@ -4,6 +4,7 @@ everything
 firacode
 flameshot
 freedownloadmanager
+git
 googlechrome
 listary
 localsend

@@ -5,6 +5,7 @@ scoop install fd
 scoop install fnm
 scoop install fzf
 scoop install gawk
+scoop install less
 scoop install lsd
 scoop install make
 scoop install mingw
