@@ -52,7 +52,6 @@ Set-alias clipcopy clip.exe
 
 
 #aliases to git binaries
-Set-Alias less "C:\Program Files\Git\usr\bin\less.exe"
 Set-alias head "C:\Program Files\Git\usr\bin\head.exe"
 Set-alias tail "C:\Program Files\Git\usr\bin\tail.exe"
 Set-alias grep "C:\Program Files\Git\usr\bin\grep.exe"
