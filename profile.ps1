@@ -36,10 +36,10 @@ Invoke-Expression (& {
 
 #LSD
 Set-Alias ls lsd
-function ll{lsd -l}
-function la{lsd -a}
-function lla{lsd -la}
-function lt{lsd --tree}
+function ll{lsd -l $args}
+function la{lsd -a $args}
+function lla{lsd -la $args}
+function lt{lsd --tree $args}
 
 #Aliases
 function normal_pwd{
