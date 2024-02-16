@@ -10,6 +10,8 @@ listary
 localsend
 modernflyouts
 neovim
+nerd-fonts-codenewroman
+nerd-fonts-hack
 notepadplusplus
 notion
 okular
@@ -18,5 +20,3 @@ qbittorrent
 qdir
 telegram
 vscode
-nerd-fonts-codenewroman
-nerd-fonts-hack
