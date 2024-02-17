@@ -8,13 +8,7 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-#fnm
-fnm env --use-on-cd | Out-String | Invoke-Expression
 
-#Lunarvim
-if(Test-Path -Path C:\Users\micae\.local\bin\lvim.ps1 -PathType Leaf ){
-  Set-Alias lvim C:\Users\micae\.local\bin\lvim.ps1
-}
 
 #Modules
 # PSReadLine
@@ -58,6 +52,7 @@ Set-alias grep "C:\Program Files\Git\usr\bin\grep.exe"
 Set-alias sed "C:\Program Files\Git\usr\bin\sed.exe"
 Set-alias awk "C:\Program Files\Git\usr\bin\gawk.exe"
 Set-alias touch "C:\Program Files\Git\usr\bin\touch.exe"
+Set-alias less "C:\Program Files\Git\usr\bin\less.exe"
 Set-alias find "C:\Program Files\Git\usr\bin\find.exe"
 Set-alias rm "C:\Program Files\Git\usr\bin\rm.exe"
 Set-alias rmdir "C:\Program Files\Git\usr\bin\rmdir.exe"
@@ -77,17 +72,6 @@ function vid {
    lvim . 
 }
 
-#Remove-Item doesn't delete folders by default, -Force solve the problem
-function remove{
-  ForEach ($filename in $args){
-    Remove-Item -Force $filename
-  }
-}
-
-#just works in adm mode
-function link ($target, $link){
-  New-Item -Path $link -ItemType SymbolicLink -Value $target
-}
 
 function copyfile($file){
   Get-content $file | clip.exe
@@ -106,16 +90,6 @@ function gau {git add -u}
 function gpl {git pull}
 
 function gs {git status}
-
-#winget install from winget
-function winstall($package){
-    winget install $package --source winget
-}
-#winget install from store
-function msinstall($package){
-    winget install $package --source msstore
-}
-
 
 #Starship source
 Invoke-Expression (&starship init powershell)

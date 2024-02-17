@@ -8,14 +8,12 @@ git
 googlechrome
 listary
 localsend
-modernflyouts
 neovim
 nerd-fonts-codenewroman
 nerd-fonts-hack
 notepadplusplus
 notion
 okular
-onlyoffice
 qbittorrent
 qdir
 telegram
