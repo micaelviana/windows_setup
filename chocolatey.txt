@@ -9,8 +9,6 @@ googlechrome
 listary
 localsend
 neovim
-nerd-fonts-codenewroman
-nerd-fonts-hack
 notepadplusplus
 notion
 okular
