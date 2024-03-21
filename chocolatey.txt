@@ -1,7 +1,6 @@
 ditto
 espanso
 everything
-firacode
 flameshot
 freedownloadmanager
 git
