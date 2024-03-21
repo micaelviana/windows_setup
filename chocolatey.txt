@@ -8,10 +8,10 @@ git
 googlechrome
 listary
 localsend
-neovim
 notepadplusplus
 notion
 okular
+python
 qbittorrent
 qdir
 telegram
