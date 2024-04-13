@@ -17,8 +17,23 @@ Get-Content chocolatey.txt | ForEach-Object { choco install $_ -y }
 Source a different path profile
 
 ```powershell
-. $env:USERPROFILE\repos\windows_setup\profile.ps1
+. $env:USERPROFILE\Developer\repos\windows_setup\profile.ps1
 ```
+
+
+
+# Wsl clipboard
+
+```bash
+cd /tmp
+wget https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip
+unzip win32yank-x64.zip
+sudo cp win32yank.exe /usr/local/bin/
+```
+
+
+
+
 
 ## Links
 
