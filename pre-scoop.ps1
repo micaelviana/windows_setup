@@ -8,3 +8,4 @@ scoop install 7zip
 scoop install git
 
 scoop bucket add extras
+scoop bucket add nerd-fonts
