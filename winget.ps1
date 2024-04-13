@@ -14,3 +14,5 @@ winget install --id=SoftwareOK.Q-Dir -e
 winget install --id=Telegram.TelegramDesktop -e  
 winget install --id=qBittorrent.qBittorrent -e  
 winget install --id=voidtools.Everything -e  
+winget install --id=9NKSQGP7F2NH -e #whatsapp
+
