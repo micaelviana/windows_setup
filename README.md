@@ -22,12 +22,13 @@ Source a different path profile
 
 
 
-# Wsl clipboard
+## WSL clipboard
 
 ```bash
 cd /tmp
 wget https://github.com/equalsraf/win32yank/releases/download/v0.1.1/win32yank-x64.zip
 unzip win32yank-x64.zip
+chmod +x win32yank.exe
 sudo cp win32yank.exe /usr/local/bin/
 ```
 
@@ -42,8 +43,6 @@ sudo cp win32yank.exe /usr/local/bin/
    [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install-win10)
 
    [Arch WSL](https://github.com/yuk7/ArchWSL)
-
-   [Wsl Clipboard](https://github.com/neovim/neovim/wiki/FAQ#how-to-use-the-windows-clipboard-from-wsl)
 
    [Win32yank release page](https://github.com/equalsraf/win32yank/releases)  
 
