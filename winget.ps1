@@ -7,6 +7,8 @@ winget install --id=Git.Git -e
 winget install --id=Google.Chrome -e  
 winget install --id=KDE.Okular -e  
 winget install --id=LocalSend.LocalSend -e  
+winget install -e --id Mozilla.Firefox.ESR
+winget install -e --id wez.wezterm
 winget install --id=MacType.MacType -e
 winget install --id=Microsoft.VisualStudioCode -e 
 winget install --id=Notepad++.Notepad++ -e  
