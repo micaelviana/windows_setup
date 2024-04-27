@@ -6,9 +6,6 @@ scoop install https://raw.githubusercontent.com/lukesampson/shimexe/master/scoop
 scoop install lsd
 scoop install make
 scoop install mingw
-scoop install nerd-fonts/CodeNewRoman-NF-Mono
-scoop install nerd-fonts/FiraCode
-scoop install nerd-fonts/FiraCode-NF-Mono
 scoop install nerd-fonts/Hack-NF-Mono
 scoop install nodejs
 scoop install psfzf
