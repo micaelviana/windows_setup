@@ -46,3 +46,5 @@ sudo cp win32yank.exe /usr/local/bin/
 
    [Win32yank release page](https://github.com/equalsraf/win32yank/releases)  
 
+   [Mac OS Cursor for Windows](https://github.com/antiden/macOS-cursors-for-Windows/tree/main)  
+
