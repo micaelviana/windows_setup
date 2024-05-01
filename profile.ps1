@@ -8,7 +8,8 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
-
+#fnm
+fnm env --use-on-cd | Out-String | Invoke-Expression
 
 #Modules
 # PSReadLine
