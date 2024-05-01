@@ -1,6 +1,10 @@
 winget install --id=9NKSQGP7F2NH -e #whatsapp
 winget install --id=Bopsoft.Listary -e  
 winget install --id=Ditto.Ditto -e  
+winget install Neovim.Neovim
+winget install -e --id Python.Python.3.10
+winget install Microsoft.PowerToys --source winget
+winget install Microsoft.PowerShell --source winget
 winget install --id=Espanso.Espanso -e  
 winget install --id=Flameshot.Flameshot -e  
 winget install --id=Git.Git -e  
