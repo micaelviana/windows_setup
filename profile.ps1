@@ -58,6 +58,8 @@ Set-alias find "C:\Program Files\Git\usr\bin\find.exe"
 Set-alias rm "C:\Program Files\Git\usr\bin\rm.exe"
 Set-alias rmdir "C:\Program Files\Git\usr\bin\rmdir.exe"
 Set-alias column "C:\Program Files\Git\usr\bin\column.exe"
+Set-alias ln "C:\Program Files\Git\usr\bin\ln.exe"
+Set-alias unlink "C:\Program Files\Git\usr\bin\unlink.exe"
  
 #{{Functions}}
 function which ($command){
