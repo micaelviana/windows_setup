@@ -7,7 +7,6 @@ winget install --id=Git.Git -e
 winget install --id=Google.Chrome -e  
 winget install --id=KDE.Okular -e  
 winget install --id=LocalSend.LocalSend -e  
-winget install --id=MacType.MacType -e
 winget install --id=Microsoft.VisualStudioCode -e 
 winget install --id=Notepad++.Notepad++ -e  
 winget install --id=Notion.Notion -e  
