@@ -1,5 +1,7 @@
 winget install --id=9NKSQGP7F2NH -e #whatsapp
 winget install --id=Bopsoft.Listary -e  
+winget install -e --id AdrienAllard.FileConverter
+winget install -e --id M2Team.NanaZip
 winget install --id=Ditto.Ditto -e  
 winget install --id=Espanso.Espanso -e  
 winget install --id=Flameshot.Flameshot -e  
