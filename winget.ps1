@@ -18,7 +18,6 @@ winget install --id=SoftwareOK.Q-Dir -e
 winget install --id=Telegram.TelegramDesktop -e  
 winget install --id=qBittorrent.qBittorrent -e  
 winget install --id=voidtools.Everything -e  
-winget install  --id 7zip.7zip -e
 winget install  --id Mozilla.Firefox.ESR -e
 winget install  --id Python.Python.3.10 -e
 winget install  --id Upscayl.Upscayl -e
