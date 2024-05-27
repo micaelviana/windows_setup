@@ -20,6 +20,14 @@ Source a different path profile
 . $env:USERPROFILE\Developer\repos\windows_setup\profile.ps1
 ```
 
+## Update debian from stable to sid(unstable)
+After installing from the Microsoft Store, edit the file located in `/etc/apt/sources.list`.
+
+Comment all the lines and add these two lines:
+```bash
+deb http://deb.debian.org/debian sid main contrib non-free
+deb-src http://deb.debian.org/debian sid main contrib non-free
+```
 
 
 ## WSL clipboard
