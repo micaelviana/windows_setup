@@ -43,6 +43,7 @@ function normal_pwd{
 Set-Alias pwd normal_pwd
 Set-alias vi lvim
 Set-alias g git
+Set-alias c clear
 Set-alias clipcopy clip.exe
 
 
