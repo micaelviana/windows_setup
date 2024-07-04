@@ -1,12 +1,18 @@
 ditto
 espanso
 everything
+file-converter
+firefox
 flameshot
 freedownloadmanager
 git
 googlechrome
 listary
 localsend
+nanazip
+neovim
+nerd-fonts-codenewroman
+nerd-fonts-hack
 notepadplusplus
 notion
 okular
@@ -14,4 +20,6 @@ python
 qbittorrent
 qdir
 telegram
+upscayl
 vscode
+wezterm.install
