@@ -1,5 +1,6 @@
 ditto
 espanso
+firacode
 everything
 file-converter
 firefox
