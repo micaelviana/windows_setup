@@ -1,8 +1,8 @@
 ditto
 espanso
-firacode
 everything
 file-converter
+firacode
 firefox
 flameshot
 freedownloadmanager
@@ -24,3 +24,4 @@ telegram
 upscayl
 vscode
 wezterm.install
+zoomit
