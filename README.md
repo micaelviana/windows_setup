@@ -29,6 +29,16 @@ deb http://deb.debian.org/debian sid main contrib non-free
 deb-src http://deb.debian.org/debian sid main contrib non-free
 ```
 
+## Enable Unix-like end-of-line in the text editors
+
+### VSCode
+Hit `Ctrl+,` to acess the settings, then search for **eol** and set **\n**
+
+### Notepad++
+For any new document: Settings -> Preferences -> New Document (left pane) -> New Document (right pane) -> Format (Line ending) -> Windows (CR LF) / Unix (LF) / Macintosh (CR)
+
+And for an already-open document: Edit -> EOL Conversion
+
 
 ## WSL clipboard
 
