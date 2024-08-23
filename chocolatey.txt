@@ -1,3 +1,4 @@
+7zip
 ditto
 espanso
 everything
