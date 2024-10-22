@@ -3,15 +3,12 @@ ditto
 espanso
 everything
 file-converter
-firacode
 firefox
 flameshot
-freedownloadmanager
 git
 googlechrome
 listary
 localsend
-nanazip
 neovim
 nerd-fonts-codenewroman
 nerd-fonts-hack
@@ -23,6 +20,8 @@ qbittorrent
 qdir
 telegram
 upscayl
+vagrant
+virtualbox
+vmwareworkstation
 vscode
 wezterm.install
-zoomit
