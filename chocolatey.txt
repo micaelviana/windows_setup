@@ -8,7 +8,6 @@ firefox
 flameshot
 git
 googlechrome
-listary
 localsend
 neovim
 nerd-fonts-codenewroman
