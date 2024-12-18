@@ -2,6 +2,17 @@
 
 Links and config files for Windows
 
+## Before Start
+I recommend you use **Powershell Core** instead of the embedded Powershell solution to run the scripts
+
+Open PowerShell in administrator mode by right-clicking and selecting "Run as administrator"
+
+So put the command:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force;
+```
+
 ## Choco Installation
 
 Use this command to install choco packages from a file
@@ -10,7 +21,7 @@ Use this command to install choco packages from a file
 Get-Content chocolatey.txt | ForEach-Object { choco install $_ -y }
 ```
 
- Make sure to run the command with administrative privileges if required.
+ Make sure to run the command with administrative privileges.
 
 ## Powershell Profile
 
@@ -20,16 +31,11 @@ Source a different path profile
 . $env:USERPROFILE\Developer\repos\windows_setup\profile.ps1
 ```
 
-## Update debian from stable to sid(unstable)
+## Update Debian from stable to testing
 
-After installing from the Microsoft Store, edit the file located in `/etc/apt/sources.list`.
+Follow the link:
 
-Comment all the lines and add these two lines:
-
-```bash
-deb http://deb.debian.org/debian sid main contrib non-free
-deb-src http://deb.debian.org/debian sid main contrib non-free
-```
+[How to Switch from Debian Stable to Testing: A Step-by-Step Guide](https://linuxiac.com/how-to-switch-from-debian-stable-to-testing/)
 
 ## Enable Unix-like end-of-line in the text editors
 
@@ -55,7 +61,7 @@ or
 
 `sudo pacman -S wl-clipboard`
 
-And inside the neovim config:
+And inside the Neovim config:
 
 ```lua
 vim.schedule(function()
@@ -75,7 +81,7 @@ chmod +x win32yank.exe
 sudo cp win32yank.exe /usr/local/bin/
 ```
 
-And inside the neovim config:
+And inside the Neovim config:
 
 ```lua
 vim.schedule(function()
