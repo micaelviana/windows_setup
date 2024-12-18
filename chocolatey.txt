@@ -4,6 +4,7 @@ ditto
 espanso
 everything
 file-converter
+firacode
 firefox
 flameshot
 git
