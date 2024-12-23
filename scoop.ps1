@@ -14,6 +14,5 @@ scoop install starship
 scoop install sudo
 scoop install tldr
 scoop install vim
-scoop install vlc
 scoop install wget
 scoop install zoxide
