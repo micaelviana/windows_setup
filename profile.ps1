@@ -41,7 +41,7 @@ function normal_pwd{
   Write-Host $pwd.Path
 }
 Set-Alias pwd normal_pwd
-Set-alias vi lvim
+Set-alias vi nvim
 Set-alias g git
 Set-alias c clear
 Set-alias clipcopy clip.exe
@@ -69,11 +69,11 @@ function which ($command){
 }
 
 function vif(){
-  lvim -o $(fzf --layout=reverse --height=50% --read0 --print0 --exit-0)
+  nvim -o $(fzf --layout=reverse --height=50% --read0 --print0 --exit-0)
 }
 
 function vid {
-   lvim . 
+   nvim . 
 }
 
 
