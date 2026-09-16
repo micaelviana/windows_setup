@@ -1,5 +1,4 @@
 7zip
-autohotkey
 bat
 bat
 ditto
@@ -7,9 +6,7 @@ espanso
 everything
 fd
 file-converter
-firacode
 firefox
-flameshot
 fnm
 fzf
 git
@@ -21,10 +18,7 @@ neovim
 nerd-fonts-codenewroman
 nerd-fonts-hack
 notepadplusplus
-notion
 okular
-psfzf
-psreadline
 python
 qbittorrent
 qdir
@@ -32,10 +26,8 @@ ripgrep
 starship
 telegram
 tealdeer
-upscayl
 vagrant
 vim
-virtualbox
 vmwareworkstation
 vscode
 wezterm.install
