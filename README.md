@@ -100,10 +100,8 @@ end
 
 ## Links
 
-   [Lunarvim](https://www.lunarvim.org/)
-
-   [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install-win10)
+   [WSL](https://learn.microsoft.com/pt-br/windows/wsl/install)
 
    [Win32yank release page](https://github.com/equalsraf/win32yank/releases)  
 
-   [Mac OS Cursor for Windows](https://github.com/antiden/macOS-cursors-for-Windows/tree/main)  
+   [Mac OS Cursor for Windows](https://github.com/antiden/macOS-cursors-for-Windows)  
