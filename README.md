@@ -31,12 +31,6 @@ Source a different path profile
 . $env:USERPROFILE\Developer\repos\windows_setup\profile.ps1
 ```
 
-## Update Debian from stable to testing
-
-Follow the link:
-
-[How to Switch from Debian Stable to Testing: A Step-by-Step Guide](https://linuxiac.com/how-to-switch-from-debian-stable-to-testing/)
-
 ## Enable Unix-like end-of-line in the text editors
 
 ### VSCode
