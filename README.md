@@ -104,8 +104,6 @@ end
 
    [WSL](https://docs.microsoft.com/pt-br/windows/wsl/install-win10)
 
-   [Arch WSL](https://github.com/yuk7/ArchWSL)
-
    [Win32yank release page](https://github.com/equalsraf/win32yank/releases)  
 
    [Mac OS Cursor for Windows](https://github.com/antiden/macOS-cursors-for-Windows/tree/main)  

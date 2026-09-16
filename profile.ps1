@@ -29,12 +29,12 @@ Invoke-Expression (& {
     (zoxide init --hook $hook powershell | Out-String)
 })
 
-#LSD
-Set-Alias ls lsd
-function ll{lsd -l $args}
-function la{lsd -a $args}
-function lla{lsd -la $args}
-function lt{lsd --tree $args}
+#Eza
+function ls{eza --icons --classify=auto $args}
+function ll{eza -l --icons --classify=auto $args}
+function la{eza -la --icons --classify=auto $args}
+function lla{eza -a --icons --classify=auto $args}
+function lt{eza --tree --icons --classify=auto $args}
 
 #Aliases
 function normal_pwd{
