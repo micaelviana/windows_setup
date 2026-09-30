@@ -1,0 +1,113 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+final_space = true
+version = 5
+
+[[blocks]]
+alignment = "left"
+type = "prompt"
+
+[[blocks.segments]]
+background = "#c44569"
+foreground = "#ffffff"
+leading_diamond = ""
+style = "diamond"
+template = "{{ if .WSL }}WSL at {{ end }}{{.Icon}}"
+type = "os"
+
+[blocks.segments.options]
+windows = ""
+
+[[blocks.segments]]
+background = "#c44569"
+foreground = "#ffffff"
+powerline_symbol = ""
+style = "powerline"
+template = "{{ .Path }} "
+type = "path"
+
+[blocks.segments.options]
+style = "full"
+
+[[blocks.segments]]
+background = "#f78fb3"
+foreground = "#ffffff"
+powerline_symbol = ""
+style = "powerline"
+template = "  {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} "
+type = "node"
+
+[[blocks.segments]]
+background = "#f78fb3"
+foreground = "#ffffff"
+powerline_symbol = ""
+style = "powerline"
+template = "  {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} "
+type = "python"
+
+[[blocks.segments]]
+background = "#caffbf"
+background_templates = [ "{{ if or (.Working.Changed) (.Staging.Changed) }}#FCA17D{{ end }}", "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#f26d50{{ end }}", "{{ if gt .Ahead 0 }}#89d1dc{{ end }}", "{{ if gt .Behind 0 }}#f17c37{{ end }}" ]
+foreground = "#333333"
+powerline_symbol = ""
+style = "powerline"
+template = " {{ .UpstreamIcon }} {{ .HEAD }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }} "
+type = "git"
+
+[[blocks]]
+alignment = "right"
+type = "prompt"
+
+[[blocks.segments]]
+background = "#83769c"
+foreground = "#ffffff"
+invert_powerline = true
+powerline_symbol = ""
+style = "powerline"
+template = " {{ .FormattedMs }} "
+type = "executiontime"
+
+[blocks.segments.options]
+always_enabled = true
+
+[[blocks.segments]]
+background = "#86BBD8"
+foreground = "#FFD700"
+invert_powerline = true
+powerline_symbol = ""
+style = "powerline"
+template = " ⚡"
+type = "root"
+
+[[blocks.segments]]
+background = "#86BBD8"
+foreground = "#ffffff"
+invert_powerline = true
+powerline_symbol = ""
+style = "powerline"
+template = " {{ .UserName }} "
+type = "session"
+
+[[blocks.segments]]
+background = "#33658A"
+foreground = "#ffffff"
+invert_powerline = true
+style = "diamond"
+template = " {{ .Name }} "
+trailing_diamond = ""
+type = "shell"
+
+[[blocks]]
+alignment = "left"
+newline = true
+type = "prompt"
+
+[[blocks.segments]]
+style = "plain"
+template = "  "
+type = "root"
+
+[[blocks.segments]]
+foreground = "#ffffff"
+style = "plain"
+template = "<#69FF94>❯</>"
+type = "text"
