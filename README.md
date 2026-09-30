@@ -21,7 +21,7 @@ Use this command to install choco packages from a file
 Get-Content chocolatey.txt | ForEach-Object { choco install $_ -y }
 ```
 
- Make sure to run the command with administrative privileges.
+ **Make sure to run the command with administrative privileges.**
 
 ## Powershell Profile
 
