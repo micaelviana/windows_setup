@@ -29,6 +29,9 @@ Invoke-Expression (& {
     (zoxide init --hook $hook powershell | Out-String)
 })
 
+
+function t{exit}
+
 # Eza
 if (Get-Command eza -ErrorAction SilentlyContinue) {
     Remove-Alias ls -ErrorAction SilentlyContinue
