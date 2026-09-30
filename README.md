@@ -25,10 +25,16 @@ Get-Content chocolatey.txt | ForEach-Object { choco install $_ -y }
 
 ## Powershell Profile
 
+Create a new powershell profile
+
+```powershell
+New-Item -Path $profile -ItemType File -Force
+```
+
 Source a different path profile
 
 ```powershell
-. $env:USERPROFILE\Developer\repos\windows_setup\profile.ps1
+. $env:USERPROFILE\Developer\remote\windows_setup\profile.ps1
 ```
 
 ## Enable Unix-like end-of-line in the text editors
