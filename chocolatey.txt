@@ -3,6 +3,7 @@ bat
 bat
 ditto
 espanso
+eza
 everything
 fd
 file-converter
