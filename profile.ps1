@@ -37,7 +37,7 @@ if (Get-Command eza -ErrorAction SilentlyContinue) {
     Remove-Alias ls -ErrorAction SilentlyContinue
 
     function ls  { eza --icons --classify=auto @args }
-    function l  { eza --icons --classify=auto @args }
+    function l  { eza -l --icons --classify=auto @args }
     function ll  { eza -l --icons --classify=auto @args }
     function la  { eza -a --icons --classify=auto @args }
     function lla { eza -la --icons --classify=auto @args }
