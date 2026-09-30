@@ -31,7 +31,7 @@ Invoke-Expression (& {
 
 #Eza
 function ls{eza --icons --classify=auto $args}
-function ll{eza -l --icons --classify=auto $args}
+function ll{eza --icons --classify=auto $args}
 function la{eza -la --icons --classify=auto $args}
 function lla{eza -a --icons --classify=auto $args}
 function lt{eza --tree --icons --classify=auto $args}
