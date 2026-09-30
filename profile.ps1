@@ -29,12 +29,16 @@ Invoke-Expression (& {
     (zoxide init --hook $hook powershell | Out-String)
 })
 
-#Eza
-function ls{eza --icons --classify=auto $args}
-function ll{eza --icons --classify=auto $args}
-function la{eza -la --icons --classify=auto $args}
-function lla{eza -a --icons --classify=auto $args}
-function lt{eza --tree --icons --classify=auto $args}
+# Eza
+if (Get-Command eza -ErrorAction SilentlyContinue) {
+    Remove-Alias ls -ErrorAction SilentlyContinue
+
+    function ls  { eza --icons --classify=auto @args }
+    function ll  { eza -l --icons --classify=auto @args }
+    function la  { eza -a --icons --classify=auto @args }
+    function lla { eza -la --icons --classify=auto @args }
+    function lt  { eza --tree --icons --classify=auto @args }
+}
 
 #Aliases
 function normal_pwd{
@@ -93,5 +97,5 @@ function gpl {git pull}
 
 function gs {git status}
 
-#Starship source
-Invoke-Expression (&starship init powershell)
+#Oh my Posh
+oh-my-posh init pwsh --config ~/Developer/remote/windows_setup/hunk.toml | Invoke-Expression
