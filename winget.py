@@ -15,7 +15,8 @@ def main():
     packages = [
         ["winget", "install", "--id", "9NKSQGP7F2NH", "-e"],
         ["winget", "install", "Microsoft.PowerShell", "--source", "winget"],
-        ["winget", "install", "Microsoft.PowerToys", "--source", "winget"]
+        ["winget", "install", "Microsoft.PowerToys", "--source", "winget"],
+        ["winget", "install", "-e","--id" , "ArminOsaj.AutoDarkMode"]
     ]
 
     for package in packages:
