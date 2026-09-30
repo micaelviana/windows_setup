@@ -30,6 +30,7 @@ tealdeer
 telegram
 vagrant
 vim
+vlc
 vmwareworkstation
 vscode
 wezterm.install
