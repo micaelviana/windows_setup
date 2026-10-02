@@ -35,4 +35,5 @@ vmwareworkstation
 vscode
 wezterm.install
 wget
+windhawk
 zoxide
