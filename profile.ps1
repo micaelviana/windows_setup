@@ -49,7 +49,10 @@ function normal_pwd{
   Write-Host $pwd.Path
 }
 Set-Alias pwd normal_pwd
-Set-alias vi nvim
+#Neovim alias config, in this case, since nv is a constant its required to force
+Remove-Item -Force Alias:nv
+Set-alias nv nvim
+# end
 Set-alias g git
 Set-alias c clear
 Set-alias clipcopy clip.exe
