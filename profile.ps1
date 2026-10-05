@@ -54,6 +54,9 @@ Remove-Item -Force Alias:nv
 Set-alias nv nvim
 # end
 Set-alias g git
+
+function gaa{git add .}
+
 Set-alias c clear
 Set-alias clipcopy clip.exe
 
