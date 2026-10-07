@@ -1,7 +1,6 @@
 7zip
 bat
 bat
-ditto
 espanso
 everything
 eza
