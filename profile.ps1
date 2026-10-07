@@ -53,10 +53,6 @@ Set-Alias pwd normal_pwd
 Remove-Item -Force Alias:nv
 Set-alias nv nvim
 # end
-Set-alias g git
-
-function gaa{git add .}
-
 Set-alias c clear
 Set-alias clipcopy clip.exe
 
@@ -97,15 +93,17 @@ function copyfile($file){
 function ..{ Set-Location ..}
 
 #git functions
-function gpu {git push origin HEAD}
-
-function gcme($message){git commit -m "$message"}
-
+Set-alias g git
+function gaa{git add .}
 function gau {git add -u}
-
 function gpl {git pull}
-
 function gs {git status}
+
+# need special treatment, both constants
+Remove-Item -Force Alias:gp
+function gp {git push origin HEAD}
+Remove-Item -Force Alias:gcm
+function gcm($message){git commit -m "$message"}
 
 #Oh my Posh
 oh-my-posh init pwsh --config ~/Developer/remote/windows_setup/hunk.toml | Invoke-Expression
